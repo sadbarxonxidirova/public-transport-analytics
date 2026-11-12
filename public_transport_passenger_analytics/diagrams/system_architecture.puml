@@ -1,0 +1,21 @@
+@startuml
+left to right direction
+actor "Foydalanuvchi" as User
+cloud "Google Cloud Platform" {
+  node "Cloud Run" {
+    component "Streamlit Web Dashboard" as UI
+    component "Python Analytics Layer" as Analytics
+    component "Data Processing Layer" as ETL
+  }
+  folder "Cloud Storage" as Storage
+}
+database "SQLite (container/local)" as DB
+folder "CSV Dataset" as CSV
+User --> UI : HTTPS orqali foydalanadi
+UI --> Analytics : filtr va so'rovlar
+Analytics --> ETL : tozalangan ma'lumot
+CSV --> ETL : 4 ta agentlik CSV
+ETL --> DB : normalizatsiya / saqlash
+ETL --> Storage : xom fayllar (ixtiyoriy)
+DB --> Analytics : tahlil uchun o'qish
+@enduml

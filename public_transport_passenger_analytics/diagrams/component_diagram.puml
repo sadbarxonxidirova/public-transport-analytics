@@ -1,0 +1,18 @@
+@startuml
+package "Public Transport Passenger Analytics System" {
+ [Streamlit UI] as UI
+ [Data Loader] as Loader
+ [Data Cleaner & Normalizer] as Cleaner
+ [Analytics Services] as Analytics
+ [Plotly Charts] as Charts
+ database "SQLite" as DB
+ [CSV Sources] as CSV
+}
+CSV --> Loader
+Loader --> Cleaner
+Cleaner --> DB
+DB --> Analytics
+Analytics --> Charts
+Charts --> UI
+UI --> Analytics : filters / parameters
+@enduml
