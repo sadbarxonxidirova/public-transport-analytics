@@ -1,5 +1,0 @@
-agency,file,rows,columns,missing_cells,duplicate_rows,unique_routes
-MARTA,MARTA_Route.csv,87,13,0,0,87
-TRIMET,TRIMET_Route.csv,80,13,0,0,80
-MIAMI_DADE,MIAMI_DADE_Route.csv,74,13,0,0,74
-METRO_TRANSIT,METRO_TRANSIT_Route.csv,117,13,0,0,117
