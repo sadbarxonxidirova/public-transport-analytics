@@ -1,5 +1,6 @@
 # Public Transport Passenger Analytics System
-
+  ## Live Demo
+  🔗 https://public-transport-analytics.onrender.com
 **Jamoat transporti yo‘lovchilarini tahlil qilish tizimi** — to‘rtta AQSh jamoat transporti agentligining yo‘nalish kesimidagi yo‘lovchilar va qatnov ko‘rsatkichlarini taqqoslash uchun o‘quv-tahliliy web-ilova.
 
 ## Dataset
